@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="html" id="html" style="opacity:1">
+<head>
+	<meta charset="UTF-8">
+	<title>2017长春地产总评榜评选</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="/hd/assets/stylesheets/alert_box/pc_form.min.css">
+	<link rel="stylesheet" href="./assets/stylesheets/pc_ind.min.css">
+</head>
+<body class="body" id="body">
+	<div class="seascape_wrap" id="seascape_wrap">
+		<header class="seascape_header">
+			<img src="assets/images/pc_banner.png"  id="back_top">
+		</header>
+		<main class="seascape_main">
+			<section class="loupan_main">
+				<div class="loupan_city">
+					<nav id="city_nav">
+							<a href="javascript:;" class="on" data-id="1">长春地标楼盘</a>
+							<a href="javascript:;" data-id="2">年度杰出商业地产</a>
+							<a href="javascript:;" data-id="3">年度最受关注楼盘</a>
+							<a href="javascript:;" data-id="4">年度品质楼盘</a>
+						</nav>
+				</div>
+				<!-- 楼盘展示 -->
+				<div class="loupan_box" id="loupan_box"></div>
+			</section>
+			<section class="loupan_main">
+				<div class="loupan_city">
+					<nav id="nian_nav">
+							<a href="javascript:;" class="on" data-id="5">年度热销楼盘</a>
+							<a href="javascript:;" data-id="6">最具投资价值典范楼盘</a>
+							<a href="javascript:;" data-id="7">年度人居创新楼盘</a>
+							<a href="javascript:;" data-id="8">年度生态宜居楼盘</a>
+						</nav>
+				</div>
+				<!-- 楼盘展示 -->
+				<div class="loupan_box" id="loupan_box2"></div>
+			</section>
+			<section class="zhuanPan">
+				<img src="assets/images/zhuan_back_pc.png" class="zhuan_back_pc">
+				<img src="assets/images/zhuan_yuan_pc.png" class="zhuan_yuan_pc" id="zhuan_yuan_pc" data-num="0">
+				<img src="assets/images/zhuan_zhi_pc.png" class="zhuan_zhi_pc" id="zhuan_zhi_pc">
+			</section>
+			<section class="guize_main">
+				<div class="text_box">
+					<p>哪些楼盘品质优胜、户型创新、景观独特、潜力无限、值得购买……</p>
+					<p class="zong">年度记忆——2017择居长春＆网易房产长春地产总评榜评选全面呈现！</p>
+					<p>这是品质楼盘的“沙场点兵”————楼盘标杆，品牌典范</p>
+					<p>在过去的2017年，哪些楼盘是您心目中的最佳？</p>
+					<p class="zong">请投出您宝贵的一票！</p>
+					<ul>
+						<li class="zong">凡参与投票者，并在本页面下方留下个人的姓名及手机号，即可免费参与转盘活动，共有3次抽奖机会，</li>
+						<li>大奖iPhone X一部。我们将在活动结束后联系获奖者，请保持手机畅通。</li>
+					</ul>
+					<p>本活动最终解释权归长春择居网络技术有限公司（截止时间2018年1月21日）</p>
+				</div>
+			</section>
+		</main>
+		<footer class="seascape_footer">
+			<div class="box">
+				<img class="bottom_img" src="assets/images/pc_icon.png" id="loupan_bottom">
+				<img class="bottom_img2" src="assets/images/pc_icon2.png" id="loupan_bottom">
+				<div class="footer_text" id="footer_text">
+					<p class="input">
+						<input type="text" id="hd_name" maxlength="16" placeholder="请输入您的称呼">
+						<b class="error" id="name_error">请输入您的称呼</b>
+					</p>
+					<p class="input">
+						<input type="tel" class="writeTel" id="hd_phone"  maxlength="11" placeholder="请输入11位手机号">
+						<b class="error" id="phone_error">请输入正确的手机号</b>
+					</p>
+					<p class="yan">
+						<input type="text" placeholder="请输入验证码" id="hd_yanzm" class="yanzm" maxlength="6"> 
+						<input type="button" class="yanbtn" id="hd_yanzmBtn" value="获取" disabled="disabled">
+						<b class="error" id="yan_error">验证码错误</b>
+					</p>
+					<p class="btn"><button id="hd_btn">提交</button></p>
+				</div>
+				<div class="footer1" id="footer1"><div class="success_cont" id="success_cont"></div></div>
+			</div>
+		</footer>
+	</div>
+	<div class="box_alert" id="box_alert"></div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/base.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/utf.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/qrcode.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/turntableA.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/alerts.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" src="./assets/javascripts/pc_pu.min.js"></script>
+	<script type="text/javascript" >
+		//$(function(){
+			$('#seascape_wrap').Public({
+				alertAsync : true
+			})
+	//	})
+	</script>
+</body>
+</html>

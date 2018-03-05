@@ -1,0 +1,386 @@
+.html,.body{
+	font-size: 10px;
+}
+body{
+	background:#211056;
+	.logo{
+		position: fixed;
+		top:0;
+		opacity: 0;
+	}
+}
+.body404{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top:100px;
+	background:#fff;
+	span{
+		display: block;
+		margin-top:40px;
+		b{
+			color:red;
+			font-size:30px;
+			margin-right: 6px;
+		}
+	}
+}
+.seascape_wrap{
+	margin:0 auto;
+	min-width:1000px;
+	.seascape_header{
+		width:100%;
+		min-width:1200px;
+		overflow: hidden;
+		&>img{
+			display:block;
+			width:100%;
+		}
+	}
+	.seascape_main{
+		width:1200px;
+		margin: 0 auto;
+		min-height:200px;
+		padding-bottom:100px;
+		.zhuanPan{
+			position: relative;
+			margin: 44px 0;
+			.zhuan_back_pc{
+				width:100%;
+				display: block;
+			}
+			.zhuan_zhi_pc{
+				position: absolute;
+				left:50%;
+				top:50%;
+				width:120px;
+				transform:translate(-50%,-64%)  ;
+			}
+			.zhuan_yuan_pc{
+				position: absolute;
+				left:50%;
+				top:50%;
+				width: 468px;
+				margin-left: -234px;
+				margin-top: -234px;
+			}
+		}
+		.loupan_main{
+			width:100%;
+			.loupan_city{
+				position: relative;
+				background: url(/hd/template4/assets/images/nav_back_pc.png) no-repeat center center;
+				background-size:cover;
+				height:120px;
+				margin-bottom:20px;
+				nav{
+					display: flex;
+					width:540px;
+					position: absolute;
+					left:300px;
+					top:25px;
+					height:66px;
+					a{
+						color:#fff;
+						flex:1;
+						text-align: center;
+						height:100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font-size: 24px;
+						&.on{
+							color: #F8E81C;
+						}
+					}
+				}
+			}
+			.loupan_box{
+				section{
+					margin-bottom:40px;
+					display: flex;
+					justify-content: space-between;
+					dl{
+						background: #fff;
+						width:290px;
+						dt{
+							height: 50px;
+							color:#fff;
+							text-align: center;
+							line-height: 50px;
+							background: url(/hd/template4/assets/images/loupan_title_pc.png) no-repeat center center;
+							background-size: cover;
+							font-size: 26px;
+							padding:0 10px;
+						}
+						dd{
+							&>a{
+								display: block;
+								height:200px;
+								background-size:cover;
+								background-position: left center;
+								background-repeat: no-repeat;
+							}
+							p{
+								padding:6px 20px;
+								line-height: 20px;
+								font-size:14px;
+								b{
+									color:#EE2C2F;
+								}
+								span{
+									color: #404040;
+								}
+								time{
+									color:#8c8c8c;
+								}
+							}
+							.duo{
+								position: relative;
+								b{
+									position: absolute;
+								}
+								span{
+									width:100%;
+									height:100%;
+									display: -webkit-box;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 2;
+									overflow: hidden;
+									text-indent:5em;
+								}
+							}
+							.price{
+								b{
+									font-size:18px;
+								}
+								span{
+									color:#333;
+								}
+							}
+							.dizhi{
+								height:38px;
+							}
+							.liyou{
+								font-size:18px;
+								padding:0;
+								background: url(/hd/template4/assets/images/loupan_liyou_pc.png) no-repeat center center;
+								background-size: cover;
+								height:40px;
+								width:270px;
+								margin-bottom:20px;
+								margin-left:14px;
+								a{
+									display: block;
+									width:100%;
+									height: 100%;
+									display: flex;
+									box-sizing: border-box;
+									align-items: center;
+									justify-content: center;
+									padding-right:15px;
+								}
+								span{
+									color:#fff;
+									font-size:16px;
+									padding-right:30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.guize_main{
+			.img_box{
+				margin:60px 0 30px;
+				img{
+					display: block;
+					width:100%;
+				}
+			}
+			.text_box{
+				background: rgba(0,0,0,0.29);
+				color:#fff;
+				font-size:14px;
+				border: 1px solid #797979;
+				padding:24px 34px 14px;
+				display: flex;
+				flex-direction: column;
+				margin-bottom:42px;
+				p{
+					line-height: 30px;
+				}
+				span{
+					color:#E8D224;
+				}
+				h6{
+					font-size:18px;
+					color:#E8D224;
+					font-weight: normal;
+				}
+			}
+		}
+		.guangao_box{
+			margin-bottom: 55px;
+			font-size: 24px;
+			a{
+				display: block;
+				height: 100px;
+				img{
+					display: block;
+					width:100%;
+				}
+			}
+		}
+	}
+	.seascape_footer{
+		width:100%;
+		background:  #F8DE1C;
+		height:100px;
+		position: fixed;
+		bottom:0;
+		.box{
+			margin: 0 auto;
+			position: relative;
+			width:1200px;
+			height:100%;
+			&>img{
+				position: absolute;
+				left:0;
+				top:-20px;
+				width:206px;
+				z-index:2;
+			}
+			.footer_text{
+				width:100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				p{
+					background: red;
+					position: relative;
+					margin-right:20px;
+					input,button{
+						height:40px;
+						border:none;
+						text-align:center;
+						padding:0 15px;
+						font-size:14px;
+					}
+					b{
+						position: absolute;
+						bottom:-24px;
+						font-size:13px;
+						color:#FF2727;
+						display: none;
+					}
+				}
+				.input{
+					input{
+						width:150px;
+						display: block;
+					}
+				}
+				.yan{
+					display: flex;
+					.yanzm{
+						width:90px;
+						padding:0 10px;
+					}
+					.yanbtn{
+						color:#333;
+						width:60px;
+						background: #d2cece;
+					}
+					.yanzm_btncolor{
+						background:#f63;
+						color:#fff;
+					}
+				}
+				.btn{
+					button{
+						background:#f63;
+						width:120px;
+						color:#fff;
+					}
+				}
+			}
+			.footer1{
+				height: 100%;
+				width:100%;
+				position: absolute;
+				left:0;
+				top:0;
+				background: #F8DE1C;
+				font-size: 24px;
+				color: #BE03BE;
+				display: none;
+				.success_cont{
+					height: 100%;
+					width:100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			// .jiezhi_time{
+			// 	font-size: 14px;
+			// 	color: #FF2727;
+			// 	position: absolute;
+			// 	bottom:0;
+			// 	width:100%;
+			// 	text-align: center;
+			// 	line-height: 30px;
+			// }
+		}
+	}
+}
+.zixun{
+	position: fixed;
+	right:40px;
+	top:500px;
+	display: block;
+	width:80px;
+	height:88px;
+	// display: none;
+}
+.iframe_box{
+	display: none;
+	height:620px;
+	width:680px;
+	right:10px;
+	position: fixed;
+	bottom:120px;
+	z-index: 1000;
+	.iframe{
+		height:100%;
+		width:100%;
+		box-shadow: 2px 2px 2px 2px #999,-2px -2px 2px 2px #999;
+		border-radius: 6px;
+	}
+}
+.guan_iframe{
+	position: fixed;
+  right: 0;
+  bottom: 716px;
+  z-index: 10000;
+  border: none;
+  background: #e5f4ff;
+  right: 10px;
+  font-size: 14px;
+  display: none;
+}
+ @media (max-width: 1600px){
+	.iframe_box{
+		height:520px;
+		width:580px;
+	}
+	.guan_iframe{
+		position: fixed;
+	  right:10px;
+	  bottom: 616px;
+	}
+}

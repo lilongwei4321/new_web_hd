@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" id="html" style="opacity:0;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title id="header_title">&nbsp;&nbsp;&nbsp;</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="/hd/template1/assets/stylesheets/index_mb.min.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<img src="./assets/images/bj_back_m.png" class="back" id="back">
+		<div class="main">
+			<section class="box">
+				<h4 class="title" id="geshu_title">
+					<span>已抢<b id="qing_name">&nbsp;&nbsp;&nbsp;</b>份</span>
+					<span>限额送<b>1000</b>份</span>
+				</h4>
+				<div class="cont">
+					<div class="cont_lef">
+						<h4 class="cont_title">规则说明</h4>
+						<div class="cont_box" id="cont_box_roles">
+							<p>1、从即日起至2017年8月28日，输入手机号直送<span id="city_num">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>元红包。</p>
+							<p>2、红包可凭短信使用。</p>
+							<p>3、本活动最终解释权归北京择居网络技术有限公司，电话咨询4000－808－303转0。</p>
+						</div>
+					</div>
+					<div class="cont_rig" id="footer">
+						<h4 class="cont_title">填写信息</h4>
+						<div class="cont_box">
+							<p id="name_box">
+								<span class="span">称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呼</span>
+								<input type="text" placeholder="请输入您的称呼" id="user_name">
+							</p>
+							<p>
+								<span class="span">手&nbsp;机&nbsp;号</span>
+								<input type="text" placeholder="请输入手机号" id="user_phone" maxlength="11">
+							</p>
+							<p>
+								<span class="span">验&nbsp;证&nbsp;码</span>
+								<input type="text" placeholder="请输入验证码" id="user_yanzm" maxlength="4" class="user_yanzm">
+								<input type="button" value="获取验证码" id="user_yanzmBtn" disabled="disabled" class="user_yanzmBtn">
+							</p>
+							<p id="huan_box" class="huan_box">
+								<span class="span">兑&nbsp;换&nbsp;码</span>
+								<input type="text" placeholder="请输入兑换码" id="huan_text" maxlength="11">
+							</p>
+							<p id="user_error"></p>
+							<p id="cont_btn">马上抢</p>
+						</div>	
+					</div>
+					<div class="cont_rig cont_rig1" id="footer1">
+						<div class="cont_box">
+							<img src="./assets/images/bj_gong_m.png" class="cont_pic" >
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" src="/hd/template1/assets/javascripts/publicA.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.wrap').Public({
+				tgsb :'m',
+				imgUrl :'_m'
+			})
+		})
+	</script>
+</body>
+</html>

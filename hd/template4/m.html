@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" id="html" style="opacity:0;font-size:10px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title id="title">择居11.11购房盛宴</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="/hd/template4/assets/stylesheets/m_index.min.css">
+</head>
+<body id="body">
+	<div id='wx_pic' style='margin:0 auto;display:none;'>
+		<img src='/hd/assets/images/zeju.jpg' />
+	</div>
+	<div class="container" id="wrap">
+		<!-- banner图 -->
+		<img src="assets/images/banner.png" class="banner" id="banner">
+		<!-- 转盘 -->
+		<div class="gyrate">
+			<img src="assets/images/m_zhuan_bj.png" class="m_zhuan_bj" alt="">
+			<img src="assets/images/m_zhuan.png" class="big_zhuan" id="zhuan_yuan_m" data-num="0" alt="">
+			<img src="assets/images/small_zhuan.png" class="small_zhuan" id="zhuan_zhi_m" alt="">
+			<p id="activeRules">查看活动规则</p>
+		</div>
+		<!-- 城市切换 -->
+		<div class="tab_btn">
+			<ul id="city_box">
+				<li class="itmeCity on" indexId="bj">北京</li>
+				<li class="itmeCity" indexId="cc">长春</li>
+				<li class="itmeCity" indexId="tj">天津</li>
+				<li class="itmeCity" indexId="cs">长沙</li>
+				<li class="itmeCity" indexId="suzhou">苏州</li>
+			</ul>
+		</div>
+		<!-- 楼盘列表 -->
+		<div class="loupanList" id="loupanList">
+			<section id="loupan_cont"></section>
+		</div>
+		<!-- 参与用户专享 -->
+		<div class="zhuanxiang_guize">
+			<img src="assets/images/zhuanxiang.png" class="zhuanxiang" alt="">
+		</div>
+		<!-- 留资 -->
+		<div class="liuzi_phone">
+			<div class="liuzi" id="liuzi">
+				<div>
+					<input class="inputText" id="hd_name" type="text" placeholder="请输入您的称呼" maxlength="16">
+					<p class="red" id="name_error">请输入您的称呼</p>
+				</div>
+				<div>
+					<input class="inputText" id="hd_phone" type="text" placeholder="请输入11位手机号"  maxlength="11">
+					<p class="red" id="phone_error">请输入正确的手机号</p>
+				</div>
+				<div class="verificationCode">
+					<p class="cont">
+					<input id="hd_yanzm" type="text" placeholder="请输入验证码" maxlength="4">
+					<input class="codehui" id="hd_yanzmBtn" type="button" value="获取">
+					</p>
+					<p class="red" id="yan_error">验证码错误</p>
+				</div>
+				<div>
+					<button id="hd_btn">立领1?11红包</button>
+				</div>
+			</div>
+			<div class="success" id="statusId">
+				<div id="success_cont" class="success_cont">
+				</div>
+			</div>
+		</div>
+		<!-- 苏宁广告位 -->
+		<div class="suning">
+			<a href="http://mois.suning.com/signUpTemplet/sendRedirect.do?activityCode=0353885750&storeType=2&storeCode=10000701">
+				<img src="assets/images/m_bj.jpg" alt="">
+			</a>
+		</div>
+		<a href="#liuzi" class="fixed"><img src="assets/images/fixed.png" alt=""></a>
+		<a href="javascript:;" id="online" class="online"><img src="assets/images/online.png" ></a>
+		<!-- 活动规则 -->
+		<div class="activeRuleClose" id="activeRuleClose">
+			<p class="jieshao">又一年11.11购物狂欢节，<span>择居11.11购房盛宴</span>联合<span>苏宁O2O购物节</span>一起开启这场购房盛筵，将为你推出海量特价房、<span>买房定金狂翻1000倍</span>、<span>1111元购房基金</span>、择居客户独享苏宁优惠券、择居客户专享爆款机型和套购等一系列惊喜，邀您共同见证。</p>
+			<div class="tiaokuan">
+				<h4>活动须知：</h4>
+				<p>活动时间：2017年11月01日00时-2017年11月26日24时；翻倍定金和购房基金使用截止时间为： 2018年1月31日24时。</p>
+				<h4>定金使用规则：</h4>
+				<p>（1）活动期间报名和分享即可获得一次抽奖机会，分享好友报名后最多获取5次抽奖机会，定金不可累计选最高数。</p>
+				<p>（2）定金翻倍基数为1.11元，所得定金只可抵扣房款，各城市可能会出现差异，以当地为准。</p>
+				<h4>购房基金使用规则：</h4>
+				<p>（1）购房基金和定金翻倍可同时享受，但不与择居网其他优惠同享；</p>
+				<p>（2）每人限使用一次，共计发放名额为1000名，先到先得，发放形式以各城市为准。</p>
+				<p>北京择居网络技术有限公司对该活动拥有最终解释权</p>
+				<h4>咨询电话：400-656-1188转0</h4>
+			</div>
+		</div>
+		<!-- 填写信息 -->
+		<div class="message" id="box_alert">
+			<div class="infoFrom">
+				<img class="infoClose" src="assets/images/close.png" alt="">
+				<div class="liuzi" id="liuzi2">
+					<p class="infoTitle">填写信息参与抽奖</p>
+					<div>
+						<input class="inputText" id="hd_name_info" type="text" placeholder="请输入您的称呼" maxlength="16">
+						<p class="red" id="name_error_info">请输入您的称呼</p>
+					</div>
+					<div>
+						<input class="inputText" id="hd_phone_info" type="text" placeholder="请输入11位手机号"  maxlength="11">
+						<p class="red" id="phone_error_info">请输入正确的手机号</p>
+					</div>
+					<div class="verificationCode">
+						<p class="cont">
+						<input id="hd_yanzm_info" type="text" placeholder="请输入验证码" maxlength="4">
+						<input class="codehui" id="hd_yanzmBtn_info" type="button" value="获取">
+						</p>
+						<p class="red" id="yan_error_info">验证码错误</p>
+					</div>
+					<div>
+						<button id="hd_btn_info">立即领取抽奖机会</button>
+					</div>
+				</div>
+				<div class="success" id="statusId_info">
+					<div id="success_cont_info" class="success_cont">
+						<h3 class="success_info_alert">恭喜您抽取<span id="money">0</span>元购房定金</h3>
+						<p class="info_alert">（已发放至您手机号，请注意查收）</p>
+						<div class="QR_Code" id="erweima_id"></div>
+						<p class="lucky_draw">手机微信扫一扫将活动链接分享给好友报名即可增加抽奖机会。（最多获取5次抽奖机会）</p>
+						<p class="shengyu"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/base.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/utf.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/qrcode.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/turntable.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" src="/hd/template4/assets/javascripts/m_pu.min.js"></script>
+	<script type="text/javascript" >
+			$('#wrap').Public({
+				tgsb : 'm'
+			})
+	</script>
+</body>
+</html>

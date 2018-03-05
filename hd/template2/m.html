@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title id="title"></title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="assets/stylesheets/comment.css">
+	<link rel="stylesheet" href="assets/stylesheets/m-index.min.css">
+</head>
+<body>
+	<div class="container" id="seascape_wrap">
+		<div class="header"><img id="banner" src="" alt=""></div>
+		<ul class="bodyer" id="itmeHot"></ul>
+		<ul class="bodyer" id="itmeTotal">
+		</ul>
+		<div class="liuzi" id="liuzi">
+			<div>
+				<input class="inputText" id="hd_name" type="text" placeholder="请输入称呼" maxlength="16">
+				<p class="red" id="name_error">请输入您的称呼</p>
+			</div>
+			<div>
+				<input class="inputText" id="hd_phone" type="text" placeholder="请输入手机号"  maxlength="11">
+				<p class="red" id="phone_error">请输入正确的手机号</p>
+			</div>
+			<div class="verificationCode">
+				<p class="cont">
+					<input id="hd_yanzm" type="text" placeholder="请输入验证码"  maxlength="4">
+					<input class="codehui" id="hd_yanzmBtn" type="button" value="获取">
+				</p>
+				<p class="red" id="yan_error">验证码错误</p>
+			</div>
+			<div>
+				<button id="hd_btn">立即报名</button>
+			</div>
+		</div>
+		<div class="success" id="statusId">
+			<div id="success_cont" class="success_cont"></div>
+		</div>
+		<div class="mobile"></div>
+	</div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="./assets/javascripts/public.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script>
+        $(function(){
+			$('#seascape_wrap').Public({
+				tgsb:'m'
+			})
+		})
+	</script>
+</body>
+</html>

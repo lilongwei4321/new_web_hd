@@ -1,0 +1,55 @@
+@import "../alert/pc_form.scss";
+@import "pc_index.scss";
+@import "m_index.scss";
+body,html{
+	font-size:10px;
+}
+@media (min-width: 1300px) {
+	.seascape_wrap{
+		.mainBox_contRow{
+			.divWei{
+				dd{
+					h2{
+						font-size:26px! important;
+					}
+					p{
+						.price{
+							font-size:22px;
+						}
+					}
+					div{
+						input{
+							font-size:24px! important;
+							height:90%! important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1600px) {
+	.seascape_wrap{
+		.mainBox_contRow{
+			.divWei{
+				dd{
+					h2{
+						font-size:28px! important;
+					}
+					p{
+						.price{
+							font-size:24px;
+						}
+					}
+					div{
+						input{
+							font-size:28px! important;
+							height:90%! important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+  

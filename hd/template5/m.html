@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html id="html" style="font-size:10px;opacity:0">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title id="title">幸福等你 回家置业</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="/hd/template5/assets/stylesheets/m.min.css">
+</head>
+<body id="body">
+	<div class="wrap big_box" id="wrap">
+		<img class="bg_img" src="assets/images/m_banner.png" alt="">
+		<div class="small_box">
+			<!-- 城市切换 -->
+			<div class="tab_btn juzhong">
+				<span class="tabCity on" indexId="bj" data-id="0">北京</span>
+				<span class="tabCity" indexId="tj" data-id="1">天津</span>
+				<span class="tabCity" indexId="cc" data-id="2">长春</span>
+				<span class="tabCity" indexId="cs" data-id="3">长沙</span>
+				<span class="tabCity" indexId="suzhou" data-id="4">苏州</span>
+			</div>
+			<!-- 楼盘列表 -->
+			<div class="loupanList" id="loupanList"></div>
+			<!-- 活动说明 -->
+			<div class="explain" id="explain_info"></div>
+			<!-- 填写信息 -->
+			<div class="liuzi" id="liuzi">
+				<div>
+					<input class="inputText" id="hd_name" type="text" placeholder="请输入称呼" maxlength="16">
+					<p class="red" id="name_error">请输入您的称呼</p>
+				</div>
+				<div>
+					<input class="inputText" id="hd_phone" type="text" placeholder="请输入手机号"  maxlength="11">
+					<p class="red" id="phone_error">请输入正确的手机号</p>
+				</div>
+				<div class="verificationCode">
+					<p class="cont">
+						<input id="hd_yanzm" type="text" placeholder="请输入验证码"  maxlength="4">
+						<input class="codehui" id="hd_yanzmBtn" type="button" value="获取">
+					</p>
+					<p class="red" id="yan_error">验证码错误</p>
+				</div>
+				<div>
+					<button id="hd_btn">立即报名</button>
+				</div>
+			</div>
+			<div class="success" id="statusId">
+				<div id="success_cont" class="success_cont">
+				</div>
+			</div>
+		</div>
+		<a id="online" href="">
+			<img class="zixun" src="assets/images/m_online.png" alt="">
+		</a>
+  </div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/base.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/utf.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/qrcode.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/turntable.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" src="/hd/template5/assets/javascripts/public.min.js"></script>
+	<script type="text/javascript" >
+		$('#wrap').Public({
+		    tgsb : 'm'
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+$color_one:#d2f1ec;
+.container{
+	max-width:640px;
+	margin: 0 auto;
+	.header{
+		width: 100%;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+	.bodyer{
+		padding: 10px;
+		background: #ddfef9;
+		&>li{
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		.box-left{
+			width: 107px;
+			padding:3px;
+			height: 115px;
+			border:1px solid green;
+			.itme-img{
+				width: 100%;
+				height:100%;
+			}
+		}
+		.box-right{
+			position: relative;
+			margin-left: 120px;
+			ul>li{
+				&.list_last{
+					display:flex;
+					justify-content:flex-start;
+					flex-direction:row;
+					align-items:center;
+					height: 30px;
+					box-sizing: border-box;
+					label{
+						background:$color_one;
+						padding:4px 5px;
+						border-radius: 4px;
+						font-size:10px;
+						margin-right: 3px;
+					}
+				};
+			}
+			.name{
+				font-size: 20px;
+				font-weight: bold;
+				color: #4EA0AE;
+				display: -webkit-box;
+				text-overflow:ellipsis;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				overflow: hidden;
+				padding-top: 10px;
+			}
+			.address{
+				padding: 6px 0 5px 0;
+				font-size: 14px;
+				white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    width: 84%;
+			}
+			.tag-reason{
+				/*background: #ea5404;*/
+				/*margin-top: 10px;*/
+				padding: 2px 0 5px 0;
+				color: #ea5404;
+				border-radius: 5px;
+				display: inline-block;
+			}
+			.phone{
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.contains{
+				display: -webkit-box;
+				text-overflow:ellipsis;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+				line-height: 21px;
+			}
+		}
+	}
+	#itmeTotal{
+		padding-bottom: 40px;
+		.box-right{
+			ul{
+				height: 124px;
+				flex-direction:column;
+				display:flex;
+				justify-content:space-between;
+				li:nth-child(2){
+					padding: 10px 0 0 0;
+					display: -webkit-box;
+					text-overflow:ellipsis;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+	.footer{
+		background: #ddfef9;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		max-width: 640px;
+		display:flex;
+		justify-content:space-between;
+		a{
+			flex:1;
+			border-radius: 5px;
+			background: #4ea0ae;
+			color: #FFF;
+			font-size: 18px;
+			border: none;
+			padding: 10px;
+			text-align: center;
+		}
+	}
+}

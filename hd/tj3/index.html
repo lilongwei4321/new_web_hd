@@ -1,0 +1,345 @@
+<!DOCTYPE html> <!-- 使用 HTML5 doctype，不区分大小写 -->
+<html lang="zh-cmn-Hans" style="background-color: #f9f9f9"> <!-- 更加标准的 lang 属性写法 http://zhi.hu/XyIa -->
+     <head>
+          <!-- 声明文档使用的字符编码 -->
+          <meta charset='utf-8'>
+          <!-- 优先使用 IE 最新版本和 Chrome -->
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+          <!-- 页面描述 -->
+          <meta name="description" content="不超过150个字符"/>
+          <!-- 页面关键词 -->
+          <meta name="keywords" content=""/>
+          <!-- 网页作者 -->
+          <meta name="robots" content="index,follow"/>
+          <!-- 为移动设备添加 viewport -->
+          <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+          <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+          <!-- iOS 设备 begin -->
+          <meta name="apple-mobile-web-app-title" content="标题">
+          <!-- 添加到主屏后的标题（iOS 6 新增） -->
+          <meta name="apple-mobile-web-app-capable" content="yes"/>
+          <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+          <meta name="format-detection" content="telphone=no, email=no"/>
+          <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+          <!-- 避免IE使用兼容模式 -->
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <!-- windows phone 点击无高光 -->
+          <meta name="msapplication-tap-highlight" content="no">
+          <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+          <link rel="stylesheet" href="assets/log.css">
+          <!-- iOS 图标 begin -->
+          <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>
+          <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+          <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+          <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+          <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+          <link type="text/css" href="http://at.alicdn.com/t/font_r8vm5ps1lcjtt9.css" rel="stylesheet">
+          <!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+          <!-- iOS 图标 end -->
+          <title>择居网-买房就是择居</title>
+     </head>
+     <body>
+        <div class="h5_container">
+          <div class="header">
+          <div class="fixed_box" style="top: 0">
+            <div id="marqueebox0" style="overflow: hidden;height: 42px;position: relative;border-top: 1px solid #eee">
+              <ul class="yueche" >
+               
+              </ul>
+                <a class="telephone" href="tel:4000-808-303,12001" ref="nofollow">
+                <div class="yuyue fr">
+                  立即预约
+                </div>
+                </a>
+                <i class="iconfont abs out">&#xe62b;</i>
+            </div>
+            <div style="height: 10px;background-color: #FFF2EB;border-bottom: 1px solid #eee" class="bian"></div>
+          </div>
+          <div class="flex_box quyu" style="margin-top: 55px;">
+            <span class="location index_foter pdY16 border_r_gray active"
+             onclick="loadData('1',1)">热门楼盘</span>
+            <span class="location index_foter pdY16 border_r_gray a1" 
+            onclick="loadData('279168208517122',1)">津南</span>
+            <span class="location index_foter pdY16 border_r_gray a1"
+              onclick="loadData('279168477335554',1)">东丽</span>
+            <span class="location index_foter pdY16 border_r_gray a1"
+            onclick="loadData('263806013054978',1)">武清</span>
+            <span class="location index_foter pdY16 border_r_gray a1"
+            onclick="loadData('284886028662786',1)">北辰</span>
+            <span class="location index_foter pdY16 border_r_gray a1"
+            onclick="loadData('288577256753154',1)">西青</span>
+             <a href="http://m.zeju.com/tj/loupan.html" class="c333 index_foter">
+            <i class="iconfont index_foter in" style="z-index: 1000;line-height: 49px;">&#xe62a;</i>
+            </a>
+          </div>
+          
+          </div>
+           <img src="assets/banner.png" alt="" class="h5_container lpimg">
+          <div id="datay">
+
+          </div>
+        <div id="loaddata" style="display:none;text-align:center;font-size:14px;margin-top: 15px">正在加载。。。</div>
+        <div class="h5_container text-center f12 gray mt10">Copyright © 2017 北京择居网络技术有限公司 版权所有<br>京ICP备 12040561号 -9   |   京ICP证161143号</div>
+    <div id="nodata" style="display:none;text-align:center;"><img src="assets/zw.jpg">
+    </div>    
+          <div class="flex_box fix footer">
+            <a href="http://m.zeju.com/tj/guwen.html" class="c333 index_foter">
+            <div class="pdY10">
+              <i class="iconfont f20">&#xe635;</i><br>
+              找咨询师
+            </div>
+            </a>
+            <a href="http://m.zeju.com/yueche.html" class="c333 index_foter yueche1">
+            <div class="pdY10">
+              <i class="iconfont f20">&#xe73c;</i><br>
+              预约专车
+            </div>
+            </a>
+            <a href="tel:4000-808-303,12001" class="c333 index_foter telephone">
+            <div class="pdY10" style="background-color: #ea5404;color: #fff">
+              <i class="iconfont f20">&#xe695;</i><br>
+              24小时电话咨询
+            </div>
+            </a>
+          </div>
+          <div style="height: 64px"></div>
+        </div>
+
+        <script>
+          document.documentElement.style.fontSize = document.documentElement.clientWidth/3.75 + 'px';
+         $(".a1").click(function(){
+            $(".lpimg").hide();
+          }) 
+          $(".location").each(function(){
+            $(this).click(function(){
+              $(".location").removeClass("active");
+              $(this).addClass("active");
+            })
+          })
+
+          $(".out").click(function(){
+            $("#marqueebox0").hide();
+            $(".bian").hide();
+            $(".header").css("height","49px");
+            $(".quyu").css("marginTop","0");
+            $(".in").css("top","17px");
+          })
+
+
+          function get_url()
+            {
+                var src = window.location.href;
+                var I = src.substr(src.indexOf("?zjfrom=") + 8).length;
+                var T = src.indexOf("?zjfrom=");
+                if (0 >= T) return "";
+                if (I == src.length) return -1;
+                var url = src.substr(src.indexOf("?zjfrom=") + 8);
+                return url;
+            }
+              var   url=get_url();
+              if(url!=null&&url.toString().length>0){
+                    $(".telephone").attr("href","tel:4000-808-303,12001"+url);
+                     $(".yueche1").attr("href","http://m.zeju.com/yueche.html?zjfrom="+url);
+                    setCookie("zjfrom",url);
+                }
+
+          function AutoScroll(obj) {
+            $(obj).find("ul:first").animate({
+                marginTop: "-42px"
+            }, 1000, function () {
+                $(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
+            });
+          }
+          $(document).ready(function(){
+             var myar = setInterval('AutoScroll("#marqueebox0")', 1000)
+                $("#marqueebox0").hover(function () {
+                    clearInterval(myar);
+                }, function () {
+                    myar = setInterval('AutoScroll("#marqueebox0")', 1000)
+                });
+             });
+
+          var page1 = 1;
+         var area_id="";
+          function loadData(area,page){
+           var items="272156562808834,343086292801538,272156930637826,272158195574786,272148782852098,361836977188863,294954029680642,293337842348034,292627593338882,330694286442498,361837499533310";
+        if(page==1){
+            page1=1;
+        }
+        area_id=area;
+        var str1="";
+        var city="tj";
+        $.ajax({
+            type:'get',
+            url:"http://www.zeju.com/server.json",
+            data:{
+                page:page,
+                area_id:area,
+                items:items
+            },
+            cache:false,
+            dataType:'json',
+            success:function(data){
+                $("#loaddata").hide();
+                if(data.length==0&&page==1){
+                    $("#datay").hide();
+                    $("#nodata").show();
+
+                }else if(data.length==0&&page>1) {
+                    $("#loaddata").show();
+                    $("#loaddata").html("暂无更多数据...");
+                }else{
+                    $("#datay").show();
+                    $("#nodata").hide();
+                }
+                for(i=0;i<data.length;i++) {
+                    var big="";
+                    var count="";
+                    if(data[i].small==null||data[i].big==null){
+                        big=" ";
+                    }else{
+                        big=data[i].small+"㎡-"+data[i].big+"㎡";
+                    }
+
+                    if(data[i].count==null){
+                        count=0;
+                    }else{
+                        count=data[i].count;
+                    }
+                    str1 += "<div class='loupan'>"
+                    str1 += "         <div class='imgcon fl'>"
+                    if(url!=null&&url.toString().length>0){
+                        str1+="<a href='http://m.zeju.com/"+city+"/loupan/"+data[i].item_id+".html?zjfrom="+url+"'>"
+                    }else{
+                        str1+="<a href='http://m.zeju.com/"+city+"/loupan/"+data[i].item_id+".html'>"
+                    }
+                   if(data[i].image!=null){
+                    str1 += " <img src=http://imgs.zeju.cn" + data[i].image + " id='item_img1'></a>"
+                  }else{
+                     str1 += " <img src='assets/loupan.jpg'></a>"
+                  }
+                    if (data[i].salse_status == '待售') {
+                        str1 += "    <img src='assets/z1.png'  class='abs type'>"
+                    } else if (data[i].salse_status == '在售')  {
+                        str1 += "    <img src='assets/z2.png'  class='abs type'>"
+                    }else if (data[i].salse_status == '售罄')  {
+                        str1 += "    <img src='assets/z3.png'  class='abs type'>"
+                    }
+
+                    str1 += "    </div> <div class='info'>"
+                    if(url!=null&&url.toString().length>0){
+                        str1+="<a href='http://m.zeju.com/"+city+"/loupan/"+data[i].item_id+".html?zjfrom="+url+"'>"
+                    }else{
+                        str1+="<a href='http://m.zeju.com/"+city+"/loupan/"+data[i].item_id+".html'>"
+                    }
+                    str1 += "    <div class='name fhidden'>" + data[i].item_name + "</div></a>  "
+                    str1 += "    <div class='mt05'>"
+                    //实地带看           <i class="iconfont blue f12 ">&#xe62d;</i>北京市通州区
+                    str1 += "    <span style='color:#333'>" 
+                    if(count<=10){
+                     str1 += "     <i class='iconfont blue f12 '>&#xe62d;</i>"+data[i].item_address+"&nbsp&nbsp"
+                    }else{
+                   str1 += "<i class='iconfont red f12'>&#xe64e;</i>实地带看"+count+"次 "
+                   str1+="&nbsp&nbsp</span>"
+                    //地区
+                    str1 += "    <span class='gray1'>" + data[i].area_name + "&nbsp&nbsp"+"</span>"
+                    }
+                    
+                    //-----------------------面积
+                 if(data[i].small!=null&&data[i].big!=null){
+                    str1 += "<span class='gray1'><em class='f12'>" + data[i].small + "-"+data[i].big+"㎡</em></span>"
+                  }
+                    str1 += "<div class='cl'></div></div>"
+                    // str1 += "   <div class='mt05 temp fhidden'>"
+                    // str1 += "<span id='discount1'>最近带看" + count + "次</span>"
+                    str1 += "<div class='mt05'>"
+                    var a = new Array();
+                if(data[i].labels!=null){
+                    a = data[i].labels.split("、");
+                  }
+                    for (j = 0; j < 3; j++) {
+                        if (a[j] != "" && a[j] != null && a[j] != undefined) {
+                            str1 += "   <span class='bor se" + j + "'>" + a[j] + "</span>"
+                        }
+                    }
+                    if(url!=null&&url.toString().length>0){
+                        str1+=" <a href='tel:4000-808-303,"+data[i].extension_num+url+"' rel='nofollow'>"
+                    }else{
+                        str1+=" <a href='tel:4000-808-303,"+data[i].extension_num+"' rel='nofollow'>"
+                    }
+
+                    str1+="    <i class='iconfont fr dianhua' style='color: #FF6513;font-size: .32rem;'>&#xe62c;</i>"
+                    str1+="</a> "
+                    str1+="<div class='mt05'><span class='f15' style='color:#FF2424'><em class='f15'>"
+                     if(data[i].average_price==null ){
+                          str1 += "0"
+                           str1+= "</em>元/㎡</span></div>"
+                        }else{
+                          if(data[i].price_type=='4'){
+                           str1 +=  data[i].average_price/10000 
+                           str1+= "</em>万元/套</span></div>" 
+                          }else{
+                       str1 +=  data[i].average_price
+                       str1+= "</em>元/㎡</span></div>"
+                         }
+                      }
+                    str1+="</div> </div> <div class='clearfix'></div> </div>"
+                }
+                if(page>1){
+                    $("#datay").append(str1);
+                }else {
+                    $("#datay").html(str1);
+                }
+            }
+        })
+    }
+     $(window).scroll(function () {
+        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+             $("#loaddata").show();
+            loadData(area_id,++page1);
+        }
+    });
+      function channg(){
+        var str="";
+        $.ajax({
+            type:'get',
+            url:"http://www.zeju.com/server.json",
+            cache:false,
+            dataType:'json',
+            success:function(data){
+                for(i=0;i<data.length;i++){
+                    str+="<li style='overflow: hidden'>"
+                    if(data[i].sex=='1'){
+                        str+=" <img src='assets/man.png' class='fl b_r'>"
+                    }else{
+                        str+=" <img src='assets/woman.png' class='fl b_r'>"
+                    }
+                    str+=" <span class='fl text' hidden2>"+data[i].nick_name+"于"+data[i].create_date+"成功预约看房专车<br>前往"+data[i].build_name+"</span>"
+                    str+="  </li>"
+                }
+
+                $(".yueche").html(str);
+            }
+
+        })
+
+    }
+  function setCookie(c_name,value) {  
+      document.cookie=c_name+ "=" +escape(value)+ ";path=/;domain=.zeju.com";  
+}
+    channg();
+    loadData('1',1);
+        </script>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?03cf2b129bc3e77b681764ab590e4c39";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+     </body>
+</html>
+
+

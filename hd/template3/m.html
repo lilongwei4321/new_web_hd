@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="html" id="html" style="font-size:10px;opacity:0;">
+<head>
+	<meta charset="UTF-8">
+	<title>买房就是择居</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="./assets/stylesheets/m_index.min.css">
+</head>
+<body class="body" id="body">
+	<div class="seascape_wrap" id="seascape_wrap">
+		<!-- <img src="assets/images/back.png"> -->
+		<header class="seascape_header">
+			<img src="assets/images/pc_bantop.png" id="back_top">
+		</header>
+		<main class="seascape_main">	
+			<section class="main_box">
+				<img src="assets/images/back1_m.png" id="loupan_apply">
+				<div class="apply_bottom" id="apply_bottom">
+					<img src="assets/images/pc_bottom1.png" class="apply_btn baoming_btn">
+					<span>已有<b> 889 </b>人报名看房</span>
+				</div>
+			</section>
+			<section  class="main_box">
+				<img src="assets/images/back2_m.png" id="loupan_back">
+				<!-- 主题内容，动态渲染 -->
+				<div class="mainBox_cont" id="mainBox_cont"></div>
+			</section>
+			<section class="main_box" id="main_box_from">
+				<img src="assets/images/back4_m.png" id="back_from" >
+				<div class="from_box">
+					<p>
+						<span>称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呼</span>
+						<input type="text" placeholder="怎么称呼您" id="hd_name" maxlength="16">
+					</p>
+					<p>
+						<span>手&nbsp;机&nbsp;号</span>
+						<input type="text" placeholder="请输入您的手机号" id="hd_phone" maxlength="11">
+					</p>
+					<p>
+						<span>验&nbsp;证&nbsp;码</span>
+						<input type="text" placeholder="请输入验证码" class="pop-input1" id="hd_yanzm" maxlength="4">
+						<input type="button" class="cod_btn"  value="获取验证码" id="hd_yanzmBtn" disabled="disabled">
+					</p>
+					<p id="user_error" class="user_error"></p>
+					<p>
+						<button class="box_alertBtn" id="hd_btn">预约免费专车</button>
+					</p>
+				</div>
+			</section>
+		</main>
+		<footer class="seascape_footer">
+			<img src="assets/images/back3_m.png" id="loupan_bottom">
+			<div class="footer_text" id="footer_text">
+				<p>1.每周六日早上8:00免费看房班车，从北京国贸出发，当天往返。</p>
+				<p>2.周一至周五看房班车不定期发车，如有需要，请联系工作人员安排。</p>
+				<p>3.有任何问题，请拨打<span>4000808303转10002</span>进行咨询</p>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/rem.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="./assets/javascripts/publics.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" >
+		$(function(){
+			$('#seascape_wrap').Public({
+				alertAsync : true,
+				tgsb   :'m',
+      	imgUrl :'_m'
+			})
+		})
+	</script>
+</body>
+</html>

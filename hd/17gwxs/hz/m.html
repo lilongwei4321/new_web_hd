@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>杭州高温补贴</title>
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="assets/stylesheets/index-m.min.css">
+</head>
+<body>
+	<div class="container">
+		<!-- banner图 -->
+		<img src="assets/images/banner-m.png" class="banner">
+		<!-- 楼盘列表 -->
+		<div class="loupanList">
+			<div class="itme1">
+				<span class="title">御湖公馆</span>
+				<a href="http://m.zeju.com/hz/loupan/404793731338239.html"><img src="assets/images/itme2.png" alt=""></a>
+				<div class="itmeInfo">
+					<p><b>价格待定（首付80.0万起）</b></p>
+					<p><b>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</b>潇山区潘右路1068号</p>
+					<span><b>项目优势：</b>40年的住宅，距离2号线很近，但是单价低，周边环境好，并且不限购。</span>
+				</div>
+			</div>
+			<div class="itme1">
+				<span class="title2">华元天鹅堡</span>
+				<a href="http://m.zeju.com/hz/loupan/405206882088958.html"><img src="assets/images/itme1.png" alt=""></a>
+				<div class="itmeInfo">
+					<p><b>均价25500元／m2（首付75.4万起）</b></p>
+					<p><b>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</b>西湖西溪539号</p>
+					<span><b>项目优势：</b>酒店式公寓，8年反租，临近西湖，周边商业圈聚集，欧莱雅和蚂蚁金服的总部所在地。</span>
+				</div>
+			</div>
+			<div class="liuzi" id="liuzi">
+				<div>
+					<input class="inputText" id="name" type="text" placeholder="请输入称呼" maxlength="16">
+					<p class="red" id="name_error">请输入您的称呼</p>
+				</div>
+				<div>
+					<input class="inputText" id="phone" type="text" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="11">
+					<p class="red" id="phone_error">请输入正确的手机号</p>
+				</div>
+				<div class="verificationCode">
+					<p class="cont">
+						<input id="inputCode" type="text" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="4">
+						<input class="codehui" id="getCode" type="button" value="获取">
+					</p>
+					<p class="red" id="yan_error">验证码错误</p>
+				</div>
+				<div>
+					<button id="submitBtn">领取红包</button>
+				</div>
+			</div>
+			<div class="success" id="statusId">
+				<div  class="success_cont" id="success_cont"></div>
+			</div>
+		</div>
+		<a href="javascript:;" id="online" class="online"><img src="assets/images/inline.png" ></a>
+	</div>
+	<script src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript">
+		$(".wrap").Liuzi({
+			nameId  : "#name",
+			phoneId : "#phone",
+			yanzmId : "#inputCode",
+			yanzmBtn: "#getCode",
+			hdBtn   : "#submitBtn",
+			huodongUrl:"http://webapi.zeju.com/liuzi/qu_gwxs",
+			yanBtnColor:'codered',
+			clue_type_id:'6',
+			tgsb         :'m',
+			online_city_name :'杭州',
+			hd_alertArr  :{
+				succeedStr : '<p class="p1">领取成功</p><p class="p2">恭喜您获得1888元现金红包</p><p class="p3">（注意短信查收）</p>',
+				repeatStr    : '<p class="p2">该手机号已领取红包</p>'
+			}
+		});
+	</script>
+</body>
+</html>

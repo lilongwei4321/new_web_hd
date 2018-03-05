@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html id="html" style="opacity:1;font-size:10px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title id="title">2017长春地产总评榜评选</title>
+	<link rel="icon" href="/hd/assets/images/logo.png" type="image/x-icon">
+	<script src="/hd/assets/javascripts/rem.js"></script>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="./assets/stylesheets/m_index.min.css">
+</head>
+<body id="body">
+	<div class="wrap container" id="wrap">
+		<!-- banner图 -->
+		<img src="assets/images/banner.png" class="banner" id="banner">
+		<!-- 城市切换 -->
+		<div class="tab_btn">
+			<div class="nav">
+				<div class="head transverse_center_center" id="city_box">
+					<span class="itmeCity on" indexId="1">长春地标楼盘</span>
+					<span class="itmeCity" indexId="2">年度杰出商业地产</span>
+					<span class="itmeCity" indexId="3">年度最受关注楼盘</span>
+					<span class="itmeCity" indexId="4">年度品质楼盘</span>
+					<span class="itmeCity" indexId="5">年度热销楼盘</span>
+					<span class="itmeCity" indexId="6">最具投资价值典范楼盘</span>
+					<span class="itmeCity" indexId="7">年度人居创新楼盘</span>
+					<span class="itmeCity" indexId="8">年度生态宜居楼盘</span>
+				</div>
+			</div>
+		</div>
+		<!-- 楼盘列表 -->
+		<div class="loupanList" id="loupanList"></div>
+		<!-- 转盘 -->
+		<div class="gyrate">
+			<img src="assets/images/m_zhuan_bj.png" class="m_zhuan_bj" alt="">
+			<img src="assets/images/m_zhuan.png" class="big_zhuan" id="zhuan_yuan_m" data-num="0" alt="">
+			<img src="assets/images/small_zhuan.png" class="small_zhuan" id="zhuan_zhi_m" alt="">
+		</div>
+		<!-- 参与用户专享 -->
+		<div class="text_box">
+			<p>哪些楼盘品质优胜、户型创新、景观独特、潜力无限、值得购买……</p>
+			<p class="zong">年度记忆——2017择居长春＆网易房产长春地产总评榜评选全面呈现！</p>
+			<p>这是品质楼盘的“沙场点兵”————楼盘标杆，品牌典范</p>
+			<p>在过去的2017年，哪些楼盘是您心目中的最佳？</p>
+			<p class="zong">请投出您宝贵的一票！</p>
+			<ul>
+				<li class="zong">凡参与投票者，并在本页面下方留下个人的姓名及手机号，即可免费参与转盘活动，共有3次抽奖机会，</li>
+				<li>大奖iPhone X一部。我们将在活动结束后联系获奖者，请保持手机畅通。</li>
+			</ul>
+			<p>本活动最终解释权归长春择居网络技术有限公司（截止时间2018年1月21日）</p>
+		</div>
+		<!-- 留资 -->
+		<div class="liuzi_phone">
+			<div class="liuzi" id="liuzi">
+				<div class="title">
+					留下信息 免费抽奖
+				</div>
+				<div>
+					<input class="inputText" id="hd_name" type="text" placeholder="请输入称呼" maxlength="16">
+					<p class="red" id="name_error">请输入您的称呼</p>
+				</div>
+				<div>
+					<input class="inputText" id="hd_phone" type="text" placeholder="请输入手机号"  maxlength="11">
+					<p class="red" id="phone_error">请输入正确的手机号</p>
+				</div>
+				<div class="verificationCode">
+					<p class="cont">
+						<input id="hd_yanzm" type="text" placeholder="请输入验证码" maxlength="4">
+						<input class="codehui" id="hd_yanzmBtn" type="button" value="获取">
+					</p>
+					<p class="red" id="yan_error">验证码错误</p>
+				</div>
+				<div>
+					<button id="hd_btn">提交</button>
+				</div>
+			</div>
+			<div class="success" id="statusId">
+				<div id="success_cont" class="success_cont"></div>
+			</div>
+		</div>
+		<div class="activeRuleClose" id="activeRuleClose">
+			<div class="daoqi"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/base.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/utf.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/qrcode.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/turntableA.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/zhugeSDK.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/globalFn.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript" src="/hd/2017ccndlppx/assets/javascripts/m_pu.min.js"></script>
+	<script type="text/javascript" >
+			$('#wrap').Public({
+				tgsb : 'm'
+			})
+	</script>
+</body>
+</html>

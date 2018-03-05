@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>杭州高温补贴</title>
+	<link rel="stylesheet" href="/hd/assets/stylesheets/reset_shift.css">
+	<link rel="stylesheet" href="assets/stylesheets/index.min.css">
+</head>
+<body>
+<div class="wrap">
+	<img src="assets/images/back.png" >
+	<a href="javascript:;" id="zixun" class="zixun"><img src="assets/images/zixun.png"></a>
+	<button id="guan_iframe" class="guan_iframe">退出</button>
+	<iframe src="/hd/im.html" class="iframe" id="iframe"></iframe>
+	<div class="main">
+		<div class="cont">
+			<dl class="list">
+				<dt><a href="http://hz.zeju.com/loupan/yuhugongguan/404793731338239.html"  target="_blank"><img src="assets/images/yuhu.png" alt=""></a></dt>
+				<dd>
+					<h4>御湖公馆</h4>
+					<p class="price">价格待定（首付80.0万起）</p>
+					<p class="address"><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span><span>潇山区潘石路1068号</span></p>
+					<p class="advantage"><span>项目优势：</span><span>40年的住宅，距离2号线很近，但是单价低，周边环境好，并且不限购。</span></p>
+				</dd>
+			</dl>
+			<dl class="list">
+				<dt><a href="http://hz.zeju.com/loupan/huayuantianebao/405206882088958.html"  target="_blank"><img src="assets/images/img2.png" alt=""></a></dt>
+				<dd>
+					<h4>华元天鹅堡</h4>
+					<p class="price">均价25500元／m2（首付75.4万起）</p>
+					<p class="address"><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span><span>西湖西溪539号</span></p>
+					<p class="advantage"><span>项目优势：</span><span>酒店式公寓，8年反租，临近西湖，周边商业圈聚集，欧莱雅和蚂蚁金服的总部所在地。</span></p>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div class="bottom_box"></div>
+<footer class="footer">
+	<div class="cont">
+		<p class="input">
+			<span>称&nbsp;&nbsp;&nbsp;呼</span><input type="text" id="hb_name" maxlength="16">
+			<b class="error" id="name_error">请输入您的称呼</b>
+		</p>
+		<p class="input">
+			<span>手机号</span>
+			<input type="tel" class="writeTel" id="hb_phone"  maxlength="11">
+			<b class="error" id="phone_error">请输入正确的手机号</b>
+		</p>
+		<p class="yan">
+			<span>验证码</span>
+			<input type="text" placeholder="请输入验证码" id="hb_yanzm" class="yanzm" maxlength="6"> 
+			<input type="button" class="Verification" id="hb_yanzmBtn" value="获取验证码" disabled="disabled">
+			<b class="error" id="yan_error">验证码错误</b>
+		</p>
+		<p class="btn"><button id="hb_btn">领取红包</button></p>
+		<p class="text">【输入信息领取 <b class="price">1888</b>元 红包】</p>
+	</div>
+</footer>
+<footer class="footer footer1" id="footer1">
+	<div class="success_cont" id="success_cont">
+	</div>
+</footer>
+	<script type="text/javascript" src="/hd/assets/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/jsrsasign.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/gbk.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/hunxiao.js"></script>
+	<script type="text/javascript" src="/hd/assets/javascripts/liuzis.min.js"></script>
+	<script type="text/javascript">
+		$(".wrap").Liuzi({
+			nameId  : "#hb_name",
+			phoneId : "#hb_phone",
+			yanzmId : "#hb_yanzm",
+			yanzmBtn: "#hb_yanzmBtn",
+			hdBtn   : "#hb_btn",
+			huodongUrl:"http://webapi.zeju.com/liuzi/qu_gwxs",
+			yanBtnColor:'yanzm_btncolor',
+			clue_type_id:'6',
+			tgsb         :'pc',
+			layoutType   :'0',
+			hd_alertArr  :{
+				succeedStr : '<p>恭喜您获得1888元现金红包</p><span>（注意短信查收）</span>',
+				repeatStr  : '<p class="p2">该手机号已领取红包</p>'
+			}
+		});
+
+		$("#zixun").on('click',function(){
+	    $('#iframe').show();
+	    $("#guan_iframe").show();
+	  })
+	  $("#guan_iframe").on('click',function(){
+	    $('#iframe').hide();
+	    $("#guan_iframe").hide();
+	  })
+
+	</script>
+</body>
+</html>
